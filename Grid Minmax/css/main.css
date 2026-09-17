@@ -1,3 +1,12 @@
+/* OUR CSS */
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(100px, 200px));
+}
+
+/* PREV CSS */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
