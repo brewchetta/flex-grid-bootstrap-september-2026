@@ -1,0 +1,104 @@
+/* OUR CSS */
+
+.navbar {
+	display: flex;
+	/* justify-content affects the major axis */
+	justify-content: center;
+	align-items: center;
+	height: 600px;
+	flex-direction: row;
+}
+
+.hikes {
+	margin-top: 50px;
+	/* margin-bottom: auto; */
+	align-self: start;
+}
+
+.signup {
+	margin-bottom: auto;
+	align-self: end;
+	/* grow says this should take the extra space */
+	/* flex-grow: 1;
+	flex-basis: 5em;
+	flex-shrink: 0; */
+	flex: 1 0 5em;
+}
+
+.logo {
+	align-self: stretch;
+	text-align: center;
+	/* shrink: 0 means this should not shrink down as the page gets smaller */
+	flex-shrink: 0;
+	flex-basis: 400px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.copyright {
+	align-self: start;
+	flex-grow: 2000;
+}
+
+.social {
+	align-self: flex-end;
+	flex-grow: 1000;
+}
+
+/* PREVIOUS CSS */
+
+*, *::before, *::after { 
+	box-sizing: border-box;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.navbar {
+	border: 8px solid gray;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.navbar li {
+	color: white;
+	padding: 10px;
+}
+.navbar .logo {
+	background: #0db8e8;
+}
+.navbar .hikes {
+	background: #0978e2;
+}
+.navbar .about {
+	background: #0000d5;
+}
+.navbar .contact {
+	background: #9700da;
+}
+.navbar .signup {
+	background: #dc00d4;
+	font-size: 1.5em;
+}
+footer {
+	border: 8px solid gray;
+	margin-top: 20px;
+}
+footer div {
+	border: 2px solid red;
+	padding: 10px;
+}
