@@ -1,3 +1,44 @@
+/* OUR CSS */
+
+main {
+	display: flex;
+	flex-direction: row;
+}
+
+section {
+	flex-basis: 33.33%;
+}
+
+.text-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.price {
+	margin-top: auto;
+}
+
+.primary .price {
+	margin-top: 0;
+}
+
+section.primary {
+	order: 2;
+}
+
+section.secondary {
+	order: 1;
+	margin-top: 58px;
+}
+
+section.tertiary {
+	order: 3;
+	margin-top: 58px;
+}
+
+/* PREV CSS */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }

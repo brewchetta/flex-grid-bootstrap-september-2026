@@ -1,3 +1,28 @@
+/* OUR CSS */
+
+.container {
+	display: grid;
+	/* define the different columns in the grid */
+	grid-template-columns: 100px 1fr 100px;
+	/* repeat means create X number of rows at 1fr */
+	grid-template-rows: repeat(6, 1fr);
+	/* grid auto rows makes sure that any extra rows are 5em tall */
+	grid-auto-rows: 5em;
+	grid-auto-columns: 200px;
+	/* auto flow chooses whether we add new columns or new rows with extra content */
+	grid-auto-flow: column;
+
+	/* overflow: if it goes outside the container */
+	overflow: auto;
+	/* overflow auto: show a scroll bar if we need it */
+
+	gap: 10px;
+
+	height: 80vh;
+}
+
+/* PREV CSS */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
