@@ -1,3 +1,38 @@
+/* OUR CSS */
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 175px);
+	grid-auto-rows: 150px;
+	height: 100vh;
+	/* change the alignment of items inside their cells... */
+	justify-items: center;
+	align-items: center;
+
+	/* change the alignment of the cells inside the grid... */
+	justify-content: center;
+	align-content: center;
+	
+	gap: 25px;
+}
+
+.mitsubishi {
+	border: solid red 2px;
+	/* move an individual inside its cell */
+	justify-self: start;
+	align-self: end;
+	/* put something at the end */
+	order: 1;
+}
+
+.squarespace {
+	align-self: end;
+	/* put something at the beginning */
+	order: -1;
+}
+
+/* PREV CSS */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
