@@ -1,3 +1,54 @@
+/* OUR CSS */
+
+article {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr 4fr 1fr;
+}
+
+article > * {
+	grid-column: 2 / 3;
+}
+
+article blockquote,
+article figure {
+	grid-column: 1 / -1;
+}
+
+p {
+	margin: 0;
+}
+
+aside {
+	max-width: 260px;
+}
+
+aside.left {
+	grid-column: 1 / 2;
+	align-self: center;
+	justify-self: right;
+	text-align: right;
+	border-left-width: 0px;
+	border-right-width: 1px;
+}
+
+aside.right {
+	grid-column: -2 / -1;
+	align-self: center;
+	justify-self: left;
+}
+
+
+@media (min-width: 950px) {
+	article {
+		/* max-width: 1000px; */
+		margin: auto;
+		grid-template-columns: 1fr 690px 1fr;
+	}
+}
+
+/* PREV CSS */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
